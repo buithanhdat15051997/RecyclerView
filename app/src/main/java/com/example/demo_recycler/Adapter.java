@@ -50,19 +50,21 @@ public class Adapter extends RecyclerView.Adapter<Adapter.viewhodel> {
             super(itemView);
             imgview = itemView.findViewById(R.id.img);
             txtview = itemView.findViewById(R.id.txt);
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Toast.makeText(context, ""+itemArrayList.get(getPosition()).getTen(), Toast.LENGTH_SHORT).show();
 
-
+//            itemView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    Toast.makeText(context, ""+itemArrayList.get(getPosition()).getTen(), Toast.LENGTH_SHORT).show();
+//
+//
 //                    Intent intentnew = new Intent(context, ChiTietSanPhamActivity.class);
 //                    intentnew.putExtra("thongtinchitietSP",moiNhatArrayList.get(getPosition()));
 //                    // set intent một flag để không lỗi
 //                    intentnew.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 //                    context.startActivity(intentnew);
-                }
-            });
+//                }
+//            });
+
         }
     }
     public  interface  OncallBack{
